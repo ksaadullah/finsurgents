@@ -1,0 +1,132 @@
+/* General Body Styles */
+body {
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+  /* min-height: 100vh; */
+  margin: 0;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.activity-container {
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  padding-left: 30px;
+}
+/* Circle Container Styles */
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+/* Circle Styles */
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #25c935;
+  top: 20px;
+  left: 100px;
+}
+
+.white {
+  background-color: #f5f5f5;
+  color: black;
+  top: 100px;
+  left: 30px;
+  border: 1px solid #ddd;
+}
+
+.gray {
+  background-color: #545454;
+  top: 130px;
+  left: 120px;
+}
+
+/* Circle Text Styles */
+.amount {
+  font-size: 18px;
+}
+
+.label {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Comparison Text Styles */
+.comparisontext {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+/* Progress Bar Container */
+.progress-container {
+  width: 250px;
+  margin-top: 20px;
+}
+
+/* Progress Bar Items */
+.progress-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Progress Bar Background */
+.progress-bar {
+  flex-grow: 1;
+  height: 20px;
+  background-color: #d9d5d5;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Progress Fill */
+.progress {
+  height: 100%;
+  border-radius: 7px;
+}
+
+.greenbar {
+  background-color: #25c935;
+  width: 60%;
+}
+
+.graybar {
+  background-color: #545454;
+  width: 90%;
+}
+
+.labelmonth {
+  color: #545454;
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 10px;
+}

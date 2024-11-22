@@ -1,0 +1,63 @@
+/* Card container */
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  /* width: 75%; */
+  margin: 20px;
+  padding: 0;
+}
+
+/* Individual dashboard card styling */
+.dashboard-card {
+  width: 260px; /* Fixed width */
+  height: 180px; /* Fixed height */
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex; /* Flexbox to align content */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align content to the left */
+  padding: 15px; /* Padding inside the card */
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active card styling */
+.dashboard-card.active-card {
+  background-color: #424242; /* Dark background on click */
+  color: #f1f1f1; /* White text for contrast */
+}
+
+/* Card content styling */
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: gray; /* Inherit color for active state */
+  margin-bottom: 5px;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.card-value {
+  font-size: 26px; /* Increased font size */
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Bold weight */
+  color: inherit; /* Inherit color for active state */
+  text-align: left;
+  line-height: 30px; /* Line height for better readability */
+  margin-top: 5px;
+}
