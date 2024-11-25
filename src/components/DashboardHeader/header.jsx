@@ -1,9 +1,12 @@
 import React from "react";
+import { useTheme } from "../Theme/themeContext"; // Import ThemeContext
 import "./header.css";
 
 const Header = () => {
+  const { isDarkMode } = useTheme(); // Access dark mode state
+
   return (
-    <header className="header-container">
+    <header className={`header-container ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <div className="header-title">
         <h1>Dashboard</h1>
       </div>

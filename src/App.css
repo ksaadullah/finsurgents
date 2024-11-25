@@ -1,49 +1,49 @@
-/* Reset and global styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  /* display: flex; */
-  /* flex-direction: column; */
-}
-
 /* App layout */
 .app {
   height: 100vh;
   display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode styles */
+.app.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+.app.dark-mode {
+  background-color: #181818;
+  color: #ffffff;
 }
 
 /* Sidebar styles */
-/* .sidebar {
-  width: 250px;
-  background: #1a1a1a;
-  color: white;
-  height: 100vh; 
-  position: fixed;
-  top: 0;
-  left: 0;
-} */
-
-/* Main container (Header and Content) */
-.main {
-  /* margin-left: 290px;  */
-  flex-grow: 1; /* Allows the main content to expand */
-  display: flex;
-  flex-direction: column;
+.sidebar-container {
+  background-color: inherit; /* Inherits from app */
+  color: inherit;
 }
 
 /* Header styles */
 header {
+  background-color: inherit;
+  color: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Content below the header */
-.content {
-  /* flex-grow: 1; */
-  padding: 20px;
-  background: #f9f9f9;
+/* Content styles */
+.main-container {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Miscellaneous styles */
+.main-container-top-right {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-container-bottom {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Card styles */
 .kpi-cards {
   display: flex;
   gap: 20px;
@@ -51,12 +51,8 @@ header {
 
 .kpi-card {
   flex: 1;
-  background: #f0f0f0;
+  background: inherit;
   padding: 20px;
   border-radius: 10px;
-}
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }

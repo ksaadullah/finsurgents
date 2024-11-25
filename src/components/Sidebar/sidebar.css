@@ -9,6 +9,15 @@
   left: 0; */
 }
 
+.sidebar.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-toggle {
+  cursor: pointer;
+}
+
 .logo-container {
   padding-top: 20px;
   display: flex;

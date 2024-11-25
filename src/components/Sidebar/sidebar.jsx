@@ -1,9 +1,12 @@
 import React from "react";
+import { useTheme } from "../Theme/themeContext";
 import "./sidebar.css";
 
 const Sidebar = () => {
+  const { isDarkMode, toggleTheme } = useTheme();
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <div className="logo-container">
         <img src="icons/appLogo.png" alt="LOGO" className="logo-icon" />
         <div className="logo-text">FinSurgents</div>
@@ -20,25 +23,25 @@ const Sidebar = () => {
           <li>
             <img
               src="icons/payments.png"
-              alt="Dashboard"
+              alt="Payments"
               className="nav-icon"
             />
             Payments
           </li>
           <li>
-            <img src="icons/ledger.png" alt="Dashboard" className="nav-icon" />
+            <img src="icons/ledger.png" alt="Ledger" className="nav-icon" />
             Ledger
           </li>
           <li>
             <img
               src="icons/notification.png"
-              alt="Dashboard"
+              alt="Notifications"
               className="nav-icon"
             />
             Notifications
           </li>
           <li>
-            <img src="icons/setting.png" alt="Dashboard" className="nav-icon" />
+            <img src="icons/setting.png" alt="Settings" className="nav-icon" />
             Settings
           </li>
         </ul>
@@ -48,12 +51,16 @@ const Sidebar = () => {
       </div>
       <div>
         <ul className="nav">
-          <li>
+          <li onClick={toggleTheme} className="theme-toggle">
             <img src="icons/theme.png" alt="Theme" className="nav-icon" />
-            Theme
+            {isDarkMode ? "Theme" : "Theme"}
           </li>
           <li>
-            <img src="icons/security.png" alt="Security" className="nav-icon" />
+            <img
+              src="icons/security.png"
+              alt="Security"
+              className="nav-icon"
+            />
             Security
           </li>
         </ul>
