@@ -3,31 +3,30 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  /* height: 100vh; */
   /* display: flex; */
   /* flex-direction: column; */
 }
 
 /* App layout */
 .app {
-  /* display: flex;
-  height: 100vh; Make the layout take up the full viewport height */
+  height: 100vh;
+  display: flex;
 }
 
 /* Sidebar styles */
-.sidebar {
+/* .sidebar {
   width: 250px;
   background: #1a1a1a;
   color: white;
-  height: 100vh; /* Sidebar should stretch to the full height */
-  position: fixed; /* Keeps it fixed on the left */
+  height: 100vh; 
+  position: fixed;
   top: 0;
   left: 0;
-}
+} */
 
 /* Main container (Header and Content) */
 .main {
-  margin-left: 290px; /*Leaves space for the fixed sidebar*/
+  /* margin-left: 290px;  */
   flex-grow: 1; /* Allows the main content to expand */
   display: flex;
   flex-direction: column;
@@ -35,15 +34,6 @@ body {
 
 /* Header styles */
 header {
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
-  position: sticky; /* Keeps the header at the top when scrolling */
-  top: 0;
-  z-index: 1000; /* Ensures it sits above other elements */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Content below the header */

@@ -10,8 +10,10 @@ import Activity from "./components/Activity/activity";
 const App = () => {
   return (
     <div className="app">
-      <Sidebar />
-      <div className="main">
+      <div className="sidebar-container">
+        <Sidebar />
+      </div>
+      <div className="main-container">
         <Header />
         <div
           className="main-container"
@@ -44,7 +46,7 @@ const App = () => {
                 marginTop: "20px",
                 marginRight: "37px",
                 boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.1)",
-                borderRadius: "10px"
+                borderRadius: "10px",
               }}
             >
               <Activity />
