@@ -15,17 +15,13 @@ const Sidebar = () => {
         <p className="manage-text">Manage</p>
       </div>
       <div>
-        <ul className="nav">
+        <ul className="nav" style={{ paddingLeft: 0 }}>
           <li>
             <img src="icons/DB.png" alt="Dashboard" className="nav-icon" />
             Dashboard
           </li>
           <li>
-            <img
-              src="icons/payments.png"
-              alt="Payments"
-              className="nav-icon"
-            />
+            <img src="icons/payments.png" alt="Payments" className="nav-icon" />
             Payments
           </li>
           <li>
@@ -50,17 +46,13 @@ const Sidebar = () => {
         <p className="preferences-text">Preferences</p>
       </div>
       <div>
-        <ul className="nav">
+        <ul className="nav" style={{ paddingLeft: 0 }}>
           <li onClick={toggleTheme} className="theme-toggle">
             <img src="icons/theme.png" alt="Theme" className="nav-icon" />
             {isDarkMode ? "Theme" : "Theme"}
           </li>
           <li>
-            <img
-              src="icons/security.png"
-              alt="Security"
-              className="nav-icon"
-            />
+            <img src="icons/security.png" alt="Security" className="nav-icon" />
             Security
           </li>
         </ul>

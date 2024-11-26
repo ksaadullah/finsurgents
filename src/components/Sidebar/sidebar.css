@@ -4,6 +4,7 @@
   color: #ffffff;
   height: 100vh;
   padding: 20px;
+  border-right: 1px solid #000000;
   /* position: fixed;
   top: 0;
   left: 0; */
@@ -46,6 +47,8 @@
   font-weight: 700;
   font-style: normal;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 .nav li,
 .preferences ul li {
@@ -115,7 +118,7 @@
     width: 200px;
     background-color: #181818;
     color: #ffffff;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

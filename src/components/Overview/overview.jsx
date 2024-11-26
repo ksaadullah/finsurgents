@@ -31,7 +31,7 @@ const Overview = () => {
         data: overviewData.map((data) => data.value),
         backgroundColor: ["rgba(37, 201, 53, 1)"],
         borderRadius: 100,
-        barThickness: 30,
+        barThickness: 10,
       },
     ],
   };

@@ -27,14 +27,7 @@ const App = () => {
             color: isDarkMode ? "#ffffff" : "#000000",
           }}
         >
-          <div
-            className="main-container-top"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-            }}
-          >
+          <div className="main-container-top">
             <div
               className="main-container-top-left"
               style={{
